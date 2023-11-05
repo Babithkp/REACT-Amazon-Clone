@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.amazon img {
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0 91%);
+}
+
+header img {
+    mask-image: linear-gradient(to bottom, #fff, #fff, rgba(0, 0, 0, 0));
+}
