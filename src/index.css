@@ -9,3 +9,21 @@
 header img {
     mask-image: linear-gradient(to bottom, #fff, #fff, rgba(0, 0, 0, 0));
 }
+html{
+    font-size: 62.5% ;
+}
+@media (max-width: 940px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 730px) {
+    html{
+        font-size: 42%;
+    }
+}
+@media (max-width: 620px) {
+    html{
+        font-size: 30%;
+    }
+}

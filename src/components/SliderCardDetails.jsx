@@ -42,7 +42,7 @@ function SliderCardDetails() {
     return (
       <div
         onClick={onClick}
-        className=" absolute bottom-[6rem] z-10 h-24 w-12 rounded-sm bg-white"
+        className=" absolute bottom-[4rem] z-10 h-24 w-12 rounded-sm bg-white"
       >
         <div>
           <MdKeyboardArrowLeft
@@ -59,7 +59,7 @@ function SliderCardDetails() {
     return (
       <div
         onClick={onClick}
-        className=" absolute bottom-[6rem]  z-10 h-24 w-12  right-0 rounded-sm bg-white"
+        className=" absolute bottom-[4rem]  z-10 h-24 w-12  right-0 rounded-sm bg-white"
       >
         <MdKeyboardArrowRight
           size="2.5em"
@@ -78,12 +78,12 @@ function SliderCardDetails() {
     prevArrow: <PrevArrow />,
   };
   return (
-    <div className=" col-span-full w-[97%] bg-white relative p-4 border-none outline-none border-0">
+    <div className=" col-span-full w-[97%] bg-white relative p-4 border-none outline-none border-0 text-[1.4rem]">
       <div className="flex">
-        <h3 className="font-bold text-xl ">Trending deals</h3>
+        <h3 className="font-bold text-[1.8rem] ">Trending deals</h3>
         <a
           href="#"
-          className="hover:text-orange-500 text-teal-500 text-sm font-medium hover:underline mx-5 mt-2"
+          className="hover:text-orange-500 text-teal-500 text-[1.2rem] font-medium hover:underline mx-5 mt-2"
         >
           See all deals
         </a>
@@ -91,14 +91,14 @@ function SliderCardDetails() {
       <Slider {...settings}>
         {dealDetails.map((phone, i) => (
           <a href="#" key={i} className="outline-none">
-            <img src={phone} className="mt-4" />
+            <img src={phone} className="mt-4 h-26 w-[12rem] h-[12rem] object-contain mx-4" />
             <section className="flex">
               <p>₹99.00</p>
               <p className=" text-slate-400 text-sm mt-1 ml-3">
                 M.R.P.:<s>₹999.00</s>
               </p>
             </section>
-              <p className=" text-sm">rice lights for home decoration</p>
+              <p>rice lights for home decoration</p>
           </a>
         ))}
       </Slider>
